@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+p {
+  @apply mt-6 text-lg/6 text-zinc-600 dark:text-zinc-300;
+}
+
+blockquote {
+  @apply pl-4 border-l-2 border-zinc-600 dark:border-zinc-300;
+}
+
+p:has(> a) {
+  @apply pb-5;
+}
+
+p:has(> a):before {
+  content: " — ";
+}
+
+a {
+  @apply underline italic;
+}

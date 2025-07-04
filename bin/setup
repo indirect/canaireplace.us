@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+set -x
+
+pushd bin
+curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64
+mv tailwindcss-macos-arm64 tailwindcss
+chmod +x tailwindcss
+popd
